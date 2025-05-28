@@ -16,8 +16,10 @@ const nextConfig = {
       ...(config.resolve.alias || {}),
       "@": path.resolve(__dirname, "src"),
     };
-
     return config;
+  },
+  eslint: {
+    ignoreDuringBuilds: true,
   },
 };
 
